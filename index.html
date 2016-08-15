@@ -24,6 +24,13 @@
 <script src="jquery-3.1.0.js"></script>
     
 <script>
-    console.log($('li'));
+    $('li').on('click', function() {
+        if ($(this).is('.special')) {
+            $(this).removeClass('special');
+            $(this).siblings().addClass('special');
+             console.log("It is pressed...");
+        }
+       
+    })
 
 </script>
